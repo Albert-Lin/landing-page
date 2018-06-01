@@ -2,7 +2,7 @@
     <div id="index">
         <Row align="middle">
             <i-col id="i_col" :lg="24" :md="24" :sm="24" :xs="24">
-                <img-slider></img-slider>
+                <img-slider :imgList="imgList"></img-slider>
                 <Row id="btnList">
                     <Button class="orangeBtn" type="ghost" @click="showMessage('orange btn');"> BUTTON </Button>
                 </Row>
@@ -19,7 +19,14 @@ export default {
         "img-slider": imageSlider,
     },
     data () {
-        return {};
+        return {
+            imgList: [
+                "http://www.kimi-image.com/assets/images/banner_1.jpg",
+                "http://www.kimi-image.com/assets/images/banner_2.jpg",
+                "http://www.kimi-image.com/assets/images/banner_3.jpg",
+                "https://images.fineartamerica.com/images-medium-large-5/the-creation-of-adam-michelangelo-.jpg",
+            ],
+        };
     },
     methods: {
         showMessage (message) {
