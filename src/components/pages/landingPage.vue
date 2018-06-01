@@ -1,9 +1,10 @@
 <template>
     <div id="landingPage">
         <Layout>
-            <Header id="header">HEADER</Header>
             <Content>
+                
                 <indexPage></indexPage>
+                <Header id="header">HEADER</Header>
             </Content>
         </Layout>
     </div>
